@@ -1,0 +1,51 @@
+body{
+    color: #0062ff;
+    height: 1280;
+    width: 1920;
+}
+
+h1{
+    font-size: 400%;
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
+
+h2, h3{
+    font-size: 110%;
+}
+
+main{
+    background-color: #e4efff;
+    border: #0062ff 1px solid;
+}
+
+h1, h2, h3{
+    font-family: 'Arial Black', Gadget, sans-serif;
+    margin-left: 20px;
+}
+
+p{
+    font-family: 'Verdana', Geneva, sans-serif;
+    margin-top: -15px;
+    margin-left: 20px;
+}
+
+footer{
+    font-size:100%;
+    font-family: 'Verdana', Geneva, sans-serif;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.img1{
+    height: 200px;
+    margin-bottom: -20px;
+}
+
+.img2{
+    height: 100px;
+    margin-top: -20px;
+    margin-left: 20px;
+    margin-bottom: -10px;
+}
