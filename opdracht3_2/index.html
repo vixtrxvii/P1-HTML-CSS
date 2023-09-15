@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 3.2</title>
+</head>
+
+<body>
+
+    <h1>TUI boekingsformulier</h1>
+    <form>
+        <h2>Persoonlijke informatie</h2>
+        <div>
+            <label for="fname">Voornaam</label>
+            <input type="text" id="fname" name="fname" pattern="[^0-9]*" required>
+        </div>
+        <div>
+            <label for="lname">Achternaam</label>
+            <input type="text" id="lname" name="lname" pattern="[^0-9]*" required>
+        </div>
+        <div>
+            <label for="ssn">BSN</label>
+            <input type="text" id="ssn" name="ssn" minlength="9" maxlength="9" required>
+        </div>
+        <div>
+            <label for="male">Man</label>
+            <input type="radio" id="male" name="gender" checked>
+            <label for="female">Vrouw</label>
+            <input type="radio" id="female" name="gender">
+            <label for="non_binary">Non-binair</label>
+            <input type="radio" id="non_binary" name="gender">
+        </div>
+        <div>
+            <label for="address">Adres</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+        <div>
+            <label for="zipcode">Postcode</label>
+            <input type="text" id="zipcode" name="zipcode" maxlength="6" required>
+        </div>
+        <div>
+            <label for="residence">Woonplaats</label>
+            <input type="text" id="residence" name="residence" required>
+        </div>
+        <h2>Accommodatie</h2>
+        <div>
+            <label for="country">Land</label>
+            <select name="country" id="country" required>
+                <option value="none" selected disabled hidden>Maak je keuze</option>
+                <option value="netherlands">Nederland</option>
+                <option value="belgium">België</option>
+                <option value="germany">Duitsland</option>
+                <option value="hungary">Hongarije</option>
+            </select>
+        </div>
+        <div>
+            <label for="date1">Vertrekdatum</label>
+            <input type="date" name="date" id="date" min="2023-09-15" max="2023-12-24" required>
+        </div>
+        <div>
+            <label for="date2">Datum van terugkomst</label>
+            <input type="date" name="date" id="date" min="2023-09-16" max="2023-10-15" required>
+        </div>
+        <div>
+            <label for="people">Aantal reisgenoten</label>
+            <select name="people" id="people" required>
+                <option value="none" selected disabled hidden>Maak je keuze</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+        <div>
+            <input type="reset">
+            <button submit>Boek nu</button>
+        </div>
+        <h2>Gegevens</h2>
+        <div>
+            <label for="email">E-mailadres</label>
+            <input type="email" required>
+        </div>
+        <div>
+            <label for="password">Wachtwoord</label>
+            <input type="password" required>
+        </div>
+    </form>
+</body>
+
+</html>
