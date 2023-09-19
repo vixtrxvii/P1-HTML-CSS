@@ -27,10 +27,21 @@
         <header>
             <h1>Contact</h1>
         </header>
-        <h2>Naam</h2>
-        <h2>E-mail</h2>
-        <h2>Bericht</h2>
-        <p>Versturen</p>
+        <div>
+            <label for="name">Naam</label>
+            <input type="text" id="name" name="name" pattern="[^0-9]*" required>
+        </div>
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="message">Bericht</label>
+            <input type="text" id="message" name="message" required>
+        </div>
+        <div>
+            <input type="submit" value="Versturen">
+        </div>
     </main>
     <footer>
         Copyright Techniek College Rotterdam
