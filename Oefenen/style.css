@@ -1,0 +1,11 @@
+body{
+  min-height: 200vh;
+  position: relative;
+  margin: 0;
+}
+nav{
+  background: greenyellow;
+  display: fixed;
+  position: sticky;
+  top: 0;
+}

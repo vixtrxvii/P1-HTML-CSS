@@ -1,4 +1,4 @@
-html{
+*{
   font-size: 62.5%;
   font-family: 'Montserrat', sans-serif;
 }
@@ -14,7 +14,6 @@ html{
   color: #6E6E6E;
   padding: 200px;
 }
-
 h1{
   font-size: 2.4rem;
   color: whitesmoke;
@@ -22,7 +21,6 @@ h1{
   text-shadow: 1px 1px #a3b3c3;
   margin-bottom: 15px;
 }
-
 #intro{
   font-weight: bold;
   color: #e6e4ff;
@@ -68,5 +66,4 @@ article{
   border-radius: 10px;
   padding: 20px;
   margin-top: 20px;
-  
 }

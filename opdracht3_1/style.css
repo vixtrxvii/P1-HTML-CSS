@@ -3,16 +3,20 @@
   padding: 0;
   box-sizing: border-box;
 }
-html {
+html{
   font-size: 62.5%;
 }
 body {
   font-family: "Goldman", cursive;
+  min-height: 100vh;
+  position: relative;
+  width: 100vw;
 }
 
+/*Navigatie*/
 nav {
   display: flex;
-  width: 100%;
+  width: 100vw;
   padding: 2rem;
   min-height: 10vh;
   align-items: center;
@@ -20,6 +24,8 @@ nav {
   margin: auto;
   background: #00a8c7;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
 }
 nav ul {
   display: flex;
@@ -36,4 +42,80 @@ nav a {
 }
 nav img {
   width: 5vw;
+}
+
+/*Achtergrond*/
+#landingpagemain{
+  background-image: url("img/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  height: 100vh;
+  position: center fixed;
+}
+.blackpagemain{
+  background-color: black;
+}
+
+/*Pagina titel*/
+#landingpagetitle{
+  font-size: 5rem;
+  text-align: center;
+  color: white;
+  padding: 40vh 25vw 40vh 25vw;
+}
+h1{
+  font-size: 5rem;
+  text-align: center;
+  color: black;
+  padding-top: 10vh;
+}
+.blackpagetitle{
+  font-size: 5rem;
+  text-align: center;
+  color: white;
+  padding-top: 10vh;
+}
+
+/*Paragraaf en subtitel*/
+.whitepagetext{
+  color: black;
+  font-size: 1.5rem;
+  width: 50vw;
+  float: right;
+}
+.blackpagetext{
+  color: white;
+  font-size: 1.5rem;
+  width: 50vw;
+  float: left;
+}
+
+/*Subtitel*/
+h2{
+  font-size: 2.5rem;
+  text-align: center;
+  color: black;
+}
+.blackpagesubtitle{
+  font-size: 2.5rem;
+  text-align: center;
+  color: white;
+}
+
+
+
+footer{
+  text-align: center;
+  padding: 10px;
+  background-color: #00a8c7;
+  color: white;
+  font-size: 1.5rem;
+  height: 5vh;
+  bottom: 0;
+  position: absolute;
+  width: 100vw;
+}
+
+main img{
+  width: 20%;
 }
