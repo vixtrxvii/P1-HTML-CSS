@@ -1,0 +1,47 @@
+.flex-container-1{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  width: 1200px;
+  padding: 10px;
+}
+
+.flex-container-2{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 1200px;
+  padding: 10px;
+}
+.box{
+  height: 200px;
+  width: 200px;
+}
+#box-blue-1{
+  background-color: blue;
+}
+#box-black-1{
+  background-color: black;
+}
+#box-red-1{
+  background-color: red;
+}
+#box-green-1{
+  background-color: green;
+}
+
+#box-blue-2{
+  background-color: blue;
+}
+#box-black-2{
+  background-color: black;
+}
+#box-red-2{
+  background-color: red;
+}
+#box-green-2{
+  background-color: green;
+}
