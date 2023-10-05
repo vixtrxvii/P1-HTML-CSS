@@ -13,29 +13,38 @@
 </head>
 
 <body class="blackpagemain">
-    <nav>
+    <div class="navbar">
         <img src="./img/hacker.png" id="logo" />
-        <ul>
-            <li><a href="./html-css.html">HTML/CSS</a></li>
-            <li><a href="./javascript.html">Javascript</a></li>
-            <li><a href="./php.html">PHP</a></li>
-            <li><a href="./mysql.html">SQL</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./jaar2.html">Jaar 2</a></li>
-        </ul>
-    </nav>
-    <main >
+        <a href="./html-css.html">HTML/CSS</a>
+        <a href="./javascript.html">Javascript</a>
+        <a href="./php.html">PHP</a>
+        <a href="./mysql.html">SQL</a>
+        <a href="./contact.html">Contact</a>
+        <div class="dropdown">
+            <button class="dropbtn">Jaar 2
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">OOP</a>
+                <a href="#">Laravel</a>
+                <a href="#">Testen</a>
+            </div>
+        </div>
+    </div>
+    <main>
         <header>
             <h1 class="blackpagetitle">Javascript</h1>
         </header>
         <article class="blackpagetext">
             <h2 class="blackpagesubtitle">Wat is Javascript?</h2>
-            <p class="blackpagepara">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptates, accusantium quibusdam sunt
+            <p class="blackpagepara">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptates,
+                accusantium quibusdam sunt
                 eveniet rem voluptas beatae ex veniam enim sapiente? Architecto cumque mollitia quae! Reprehenderit
                 quaerat sint sunt facere?
             </p>
         </article>
-        <section class="blackpageimg"><img class="blackpageimg" src="./img/javascript.png" alt="Javascript Logo"></section>
+        <section class="blackpageimg"><img class="blackpageimg" src="./img/javascript.png" alt="Javascript Logo">
+        </section>
     </main>
     <footer>
         Copyright Techniek College Rotterdam
