@@ -36,7 +36,7 @@ body {
   width: 5vw;
 }
 .dropdown{
-  float: left;
+  justify-content: flex-end;
   overflow: hidden;
 }
 .dropdown .dropbtn{
@@ -59,7 +59,6 @@ body {
   background-color: white;
 }
 .dropdown-content a{
-  float: none;
   color:  #00a8c7;
   padding: 12px 16px;
   text-decoration: none;
