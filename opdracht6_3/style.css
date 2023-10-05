@@ -1,0 +1,22 @@
+.navbar{
+  display: flex;
+  color: blue;
+  width: 100vw;
+  justify-content: center;
+}
+.navbar div{
+  display: flex;
+  justify-content: space-around;
+}
+.nav-item{
+  align-self: center;
+  width: 12.5vw;
+}
+.login{
+  width: 25vw;
+  justify-content: flex-end;
+}
+.logo{
+  width: 25vw;
+  justify-content: flex-start;
+}
