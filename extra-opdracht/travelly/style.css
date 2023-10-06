@@ -1,0 +1,98 @@
+html{
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  width: 100vw;
+  height: 400vh;
+}
+
+body{
+  margin: 0;
+}
+
+.nav{
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 7vh;
+  width: 100vw;
+  background-color: #131C27;
+}
+#branding{
+  width: 48vw;
+  color: white;
+  font-family: 'Pattaya', sans-serif;
+  font-size: larger;
+}
+.navitem{
+  display: flex;
+  width: 15vw;
+  justify-content: flex-end;
+  justify-content: space-around;
+}
+.nav a{
+  text-decoration: none;
+  color: white;
+}
+
+#hero{
+  display: flex;
+  background-image: url("img/landing-page.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vw auto;
+  height: 100vh;
+}
+.hero-header{
+  width: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.hero-header-txt{
+  display: flex;
+  flex-direction: column;
+}
+.booknowbtn{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100vw;
+}
+#book-now{
+  border-style: none;
+  background-color: #4b6e97;
+  padding: 9px 11px;
+  width: 8vw;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.time-to-explore{
+  display: flex;
+  background: linear-gradient(#7f7f7f, white);
+  background-image: url("img/new-york-page.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vw auto;
+  height: 100vh;
+  align-content: center;
+}
+.time-to-xplr{
+  display: flex;
+  color: black;
+  margin-left: 5vw;
+  flex-direction: column;
+  align-content: center;
+}
+.time-to-xplr h2{
+  text-decoration: underline;
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+.time-to-xplr p{
+  margin: 0px;
+  font-size: 1.8em;
+}
