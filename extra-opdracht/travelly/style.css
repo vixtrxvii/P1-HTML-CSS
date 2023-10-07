@@ -2,11 +2,16 @@ html{
   display: flex;
   font-family: 'Poppins', sans-serif;
   width: 100vw;
-  height: 400vh;
+  height: 460vh;
 }
 
 body{
   margin: 0;
+}
+
+h1, h2, h3, p{
+  display: flex;
+  justify-content: center;
 }
 
 .nav{
@@ -42,7 +47,7 @@ body{
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100vw auto;
-  height: 100vh;
+  height: 115vh;
 }
 .hero-header{
   width: 100vw;
@@ -51,48 +56,209 @@ body{
   align-items: center;
   color: white;
 }
-.hero-header-txt{
-  display: flex;
-  flex-direction: column;
-}
-.booknowbtn{
+.hero-header-text{
   display: flex;
   justify-content: center;
-  align-content: center;
+  flex-direction: column;
+}
+h1{
+  font-size: 3.5em;
+  margin: 0vh 0vh 5vh 0vh;
+}
+.hero-header-text p{
+  font-size: 1.9em;
+  margin: 0px;
+}
+
+.booknowbtn{
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
   width: 100vw;
 }
 #book-now{
   border-style: none;
   background-color: #4b6e97;
   padding: 9px 11px;
-  width: 8vw;
+  width: 11vw;
+  height: 6vh;
   font-family: 'Poppins', sans-serif;
   color: white;
+  font-size: 1em;
 }
 
-.time-to-explore{
+.locations-page{
+  height: 115vh;
   display: flex;
-  background: linear-gradient(#7f7f7f, white);
-  background-image: url("img/new-york-page.png");
+  align-content: center;
+  flex-wrap: wrap;
+  background-image: url("img/new-york-page.png"), linear-gradient(#7f7f7f, rgb(236, 236, 236));
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100vw auto;
-  height: 100vh;
-  align-content: center;
 }
-.time-to-xplr{
+.locations-header{
   display: flex;
-  color: black;
-  margin-left: 5vw;
   flex-direction: column;
   align-content: center;
+  margin-left: 5vw;
+  color: white;
 }
-.time-to-xplr h2{
-  text-decoration: underline;
+.locations-header h2{
+  width: 24.5vw;
+  border-bottom: white solid 5px;
   font-size: 3rem;
-  margin-bottom: 30px;
+  margin-bottom: 5vh;
 }
-.time-to-xplr p{
+.locations-header p{
+  display: flex;
+  justify-content: flex-start;
   margin: 0px;
   font-size: 1.8em;
+}
+
+.benefits-page{
+  display: flex;
+  height: 115vh;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+.benefits-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  height: 30vh;
+  background-color: #131C27;
+  color: white;
+}
+.benefits-header h2{
+  width: 100vw;
+  font-size: 3em;
+  margin: 0;
+}
+.benefits-header p{
+  display: flex;
+  font-size: 1.6em;
+  width: 40vw;
+}
+.benefits-box{
+  display: flex;
+  flex-flow: column wrap;
+  height: 60vh;
+  width: 20vw;
+  box-shadow: #131C27 5px 5px;
+  background-color: white;
+}
+.benefits-box-header{
+  display: flex;
+  justify-content: center;
+  width: 20vw;
+  height: 10vh; 
+  background-color: #131C27;
+}
+.benefits-box-header svg{
+  size: 1vw 1vh;
+}
+.benefits-box-text{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.contact-page{
+  height: 115vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  background-image: url("img/contact-mountain.png"), linear-gradient(#7f7f7f, rgb(236, 236, 236));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vw auto;
+}
+.contact-box{
+  display: flex;
+  flex-flow: column wrap;
+  width: 60vw;
+  height: 70vh;
+  background-color: rgb(19, 28, 39, 0.7);
+  border-radius: 25px;
+}
+#contact-header h2{
+  color: white;
+  font-size: 2.5em;
+  padding: 0vh 0vw 10vh 0vw;
+}
+#contact-form{
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  color: white;
+}
+.contact-form-inputb{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-style: gray 1px;
+  margin: 10px 40px;
+  padding: 10px;
+  width: 15vw;
+  font-size: 0.8em;
+  font-family: 'Poppins', sans-serif;
+}
+.contact-form-inputa{
+  display: flex;
+  justify-content: center;
+}
+.contact-form-inputb:focus{
+  outline: none;
+}
+.contact-form-label{
+  display: flex;
+  align-items: center;
+}
+#contact-btn-box{
+  display: flex;
+  align-items: flex-end;
+  height: 25.6vh;
+}
+#contact-btn{
+  display: flex;
+  justify-content: center;
+  align-self: flex-end;
+}
+#submit{
+  border-style: none;
+  background-color: #4b6e97;
+  padding: 9px 11px;
+  width: 60vw;
+  height: 6vh;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 1em;
+  border-radius: 0px 0px 25px 25px;
+  opacity: 1;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100vw;
+  min-height: 4vh;
+  background-color: #131C27;
+  color: white;
+}
+.footer-text{
+  display: flex;
+  width: 32vw;
+  font-weight: 700;
+}
+.footer-item{
+  display: flex;
+  justify-content: flex-end;
+  width: 20vw;
 }
