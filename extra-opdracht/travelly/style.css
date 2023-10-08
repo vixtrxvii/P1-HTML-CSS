@@ -7,6 +7,7 @@ html{
 
 body{
   margin: 0;
+  position: relative;
 }
 
 h1, h2, h3, p{
@@ -62,11 +63,11 @@ h1, h2, h3, p{
   flex-direction: column;
 }
 h1{
-  font-size: 3.5em;
+  font-size: 3.5rem;
   margin: 0vh 0vh 5vh 0vh;
 }
 .hero-header-text p{
-  font-size: 1.9em;
+  font-size: 1.9rem;
   margin: 0px;
 }
 
@@ -84,7 +85,7 @@ h1{
   height: 6vh;
   font-family: 'Poppins', sans-serif;
   color: white;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 .locations-page{
@@ -92,7 +93,7 @@ h1{
   display: flex;
   align-content: center;
   flex-wrap: wrap;
-  background-image: url("img/new-york-page.png"), linear-gradient(#7f7f7f, rgb(236, 236, 236));
+  background-image: url("img/new-york-page.png"), linear-gradient(#707070, rgb(218, 218, 218));
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100vw auto;
@@ -114,40 +115,50 @@ h1{
   display: flex;
   justify-content: flex-start;
   margin: 0px;
-  font-size: 1.8em;
+  font-size: 1.8rem;
 }
 
 .benefits-page{
   display: flex;
-  height: 115vh;
   flex-flow: column wrap;
-  justify-content: space-between;
+  height: 115vh;
 }
 .benefits-header{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: wrap;
+  flex-wrap: wrap;
   height: 30vh;
   background-color: #131C27;
   color: white;
 }
 .benefits-header h2{
   width: 100vw;
-  font-size: 3em;
-  margin: 0;
+  font-size: 3rem;
+  margin: 0vh 0vw -8vh 0vw;
+}
+.benefits-header-p{
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  font-size: 1.6rem;
 }
 .benefits-header p{
+  margin: 0vh;
+}
+.benefits-boxes{
   display: flex;
-  font-size: 1.6em;
-  width: 40vw;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 12vh;
 }
 .benefits-box{
+  justify-content: space-between;
   display: flex;
   flex-flow: column wrap;
   height: 60vh;
   width: 20vw;
-  box-shadow: #131C27 5px 5px;
+  box-shadow: #575757 1px 1px 5px;
   background-color: white;
 }
 .benefits-box-header{
@@ -157,14 +168,21 @@ h1{
   height: 10vh; 
   background-color: #131C27;
 }
-.benefits-box-header svg{
-  size: 1vw 1vh;
+.benefits-box-icon{
+  width: 3.5vw;
 }
 .benefits-box-text{
+  height: 50vh;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
   justify-content: center;
-  align-content: center;
+  flex-direction: column;
+}
+.benefits-box-text h3{
+  margin: -5vh 0vw 0vh 0vw;
+}
+.benefits-box-text p{
+  margin: 5vh 2vw 0vh 2vw;
 }
 
 .contact-page{
@@ -173,7 +191,7 @@ h1{
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
-  background-image: url("img/contact-mountain.png"), linear-gradient(#7f7f7f, rgb(236, 236, 236));
+  background-image: url("img/contact-mountain.png"), linear-gradient(#707070, rgb(218, 218, 218));
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100vw auto;
@@ -188,7 +206,7 @@ h1{
 }
 #contact-header h2{
   color: white;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   padding: 0vh 0vw 10vh 0vw;
 }
 #contact-form{
@@ -205,7 +223,7 @@ h1{
   margin: 10px 40px;
   padding: 10px;
   width: 15vw;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   font-family: 'Poppins', sans-serif;
 }
 .contact-form-inputa{

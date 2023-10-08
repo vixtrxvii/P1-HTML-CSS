@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins&display=swap" rel="stylesheet">
-  <title>Travelly - Homepage</title>
+  <title>Welcome to Travelly</title>
 </head>
 
 <body>
@@ -23,7 +23,7 @@
       </div>
     </section>
 
-    <section class="hero-header" id="hero" name="hero">
+    <section class="hero-header" id="hero">
 
       <article class="hero-header-text">
         <h1>Travel Beyond Limits.</h1>
@@ -32,7 +32,7 @@
       </article>
 
       <section class="booknowbtn">
-        <button id="book-now">Book Now</button>
+        <a href="#contact"><button id="book-now">Book Now</button></a>
       </section>
 
     </section>
@@ -41,7 +41,7 @@
 
   <main>
 
-    <section name="locations" class="locations-page">
+    <section class="locations-page" id="locations">
 
       <article class="locations-header">
         <h2>Time to explore.</h2>
@@ -51,12 +51,15 @@
 
     </section>
 
-    <section name="benefits" class="benefits-page">
+    <section class="benefits-page" id="benefits">
 
-      <div class="benefits-header">
+      <article class="benefits-header">
         <h2>The Perfect Travel Experience.</h2>
-        <p>We cover everything from picking the perfect hotel, flight and travelling destination</p>
-      </div>
+        <div class="benefits-header-p">
+          <p>We cover everything from picking the perfect hotel,</p>
+          <p>flight and travelling destination</p>
+        </div>
+      </article>
 
       <section class="benefits-boxes">
 
@@ -65,12 +68,10 @@
           <div class="benefits-box">
 
             <div class="benefitx-box-header">
-              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="route"
-                class="svg-inline--fa fa-route fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512">
+              <svg aria-hidden="true" focusable="false" data-prefix="fas" viewBox="0 0 512 512" data-icon="route" role="img" class="svg-inline--fa fa-route fa-w-16" xmlns="http://www.w3.org/2000/svg">
                 <path fill="white"
-                  d="M416 320h-96c-17.6 0-32-14.4-32-32s14.4-32 32-32h96s96-107 96-160-43-96-96-96-96 43-96 96c0 25.5 22.2 63.4 45.3 96H320c-52.9 0-96 43.1-96 96s43.1 96 96 96h96c17.6 0 32 14.4 32 32s-14.4 32-32 32H185.5c-16 24.8-33.8 47.7-47.3 64H416c52.9 0 96-43.1 96-96s-43.1-96-96-96zm0-256c17.7 0 32 14.3 32 32s-14.3 32-32 32-32-14.3-32-32 14.3-32 32-32zM96 256c-53 0-96 43-96 96s96 160 96 160 96-107 96-160-43-96-96-96zm0 128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z">
-                </path>
+                  d="m416 320h-96c-17.6 0-32-14.4-32-32s14.4-32 32-32h96s96-107 96-160-43-96-96-96-96 43-96 96c0 25.5 22.2 63.4 45.3 96h-45.3c-52.9 0-96 43.1-96 96s43.1 96 96 96h96c17.6 0 32 14.4 32 32s-14.4 32-32 32h-230.5c-16 24.8-33.8 47.7-47.3 64h277.8c52.9 0 96-43.1 96-96s-43.1-96-96-96zm0-256c17.7 0 32 14.3 32 32s-14.3 32-32 32-32-14.3-32-32 14.3-32 32-32zm-320 192c-53 0-96 43-96 96s96 160 96 160 96-107 96-160-43-96-96-96zm0 128c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z">
+                  </path>
               </svg>
             </div>
 
@@ -100,7 +101,7 @@
               </svg>
             </div>
 
-            <article class="benefitx-box-text">
+            <article class="benefits-box-text">
               <h3>Hotel</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In illum esse ipsam similique velit,
                 consequatur
@@ -126,7 +127,7 @@
               </svg>
             </div>
 
-            <article class="benefitx-box-text">
+            <article class="benefits-box-text">
               <h3>Fly</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In illum esse ipsam similique velit,
                 consequatur
@@ -142,7 +143,7 @@
 
     </section>
 
-    <section name="contact" class="contact-page">
+    <section class="contact-page" id="contact">
 
       <div class="contact-box">
 
