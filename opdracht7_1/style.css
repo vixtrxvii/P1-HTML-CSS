@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  background-color: #ea4d4b;
+  color: white;
+  height: 10vh;
+  width: 100vw;
+}
+
+.navmenu{
+  display: none;
+  visibility: hidden;
+}
+
+h1{
+  padding-left: 5vw;
+}
+
+h2, p{
+  padding-top: 2vh;
+}
+
+section{
+  height: 30vh;
+  width: 100vw;
+  padding-left: 5vw
+}
+
+.sec1{
+  background-color: #f9ca22;
+}
+
+.sec2{
+  background-color: #f0922b;
+}
+
+.sec3{
+  background-color: #69b04c;
+}
+
+@media screen and (max-width: 768px){
+  
+  nav{
+    justify-content: center;
+    background-color: #ff6b81;
+  }
+
+  section{
+    padding-left: 2vw;
+    color: white;
+  }
+
+  .sec1{
+    background-color: #fe4657;
+  }
+  .sec2{
+    background-color: #5352ec;
+  }
+  .sec3{
+    background-color: #3742f9;
+    }
+  
+}
+
+/*telefoon*/
+@media screen and (max-width: 576px){
+
+  nav{
+    background-color: #686de0;
+  }
+
+  h1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+  }
+
+  .navmenu{
+    visibility: visible;
+    width: 75vw;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row wrap;
+    padding-right: 2vw;
+  }
+
+  #phonemenu{
+    
+    background-color: white;
+    height: 20px;
+    width: 20px;
+  }
+
+  section{
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    justify-content: center;
+    align-content: center;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  h2{
+    font-size: 25px;
+    padding-top: 0;
+  }
+
+  p{
+    font-size: 15px;
+    padding-top: 0;
+    padding: 0vh 4vw 0vh 4vw;
+  }
+
+  .sec1{
+    background-color: #7ed6df;
+  }
+
+  .sec2{
+    background-color: #e056fd;
+  }
+  
+  .sec3{
+    background-color: #30336a;
+  }
+}
+
+
