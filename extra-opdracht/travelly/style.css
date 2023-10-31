@@ -1,83 +1,103 @@
-html{
+html {
   display: flex;
   font-family: 'Poppins', sans-serif;
   width: 100vw;
   height: 460vh;
 }
 
-body{
+body {
   margin: 0;
   position: relative;
 }
 
-h1, h2, h3, p{
+h1,
+h2,
+h3,
+p {
   display: flex;
   justify-content: center;
 }
 
-.nav{
+/*navigation*/
+
+.nav {
   position: fixed;
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   min-height: 7vh;
   width: 100vw;
   background-color: #131C27;
 }
-#branding{
+
+#branding {
   width: 48vw;
   color: white;
   font-family: 'Pattaya', sans-serif;
   font-size: larger;
 }
-.navitem{
+
+#navitems{
   display: flex;
-  width: 15vw;
-  justify-content: flex-end;
+  width: 40vw;
   justify-content: space-around;
 }
-.nav a{
+
+.navitem {
+  display: flex;
+  width: 15vw;
+  justify-content: space-around;
+}
+
+.nav a {
   text-decoration: none;
   color: white;
 }
 
-#hero{
+/*landing page*/
+
+#hero {
   display: flex;
   background-image: url("img/landing-page.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100vw auto;
+  background-size: cover;
   height: 115vh;
 }
-.hero-header{
+
+.hero-header {
   width: 100vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
 }
-.hero-header-text{
+
+.hero-header-text {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-h1{
+
+h1 {
   font-size: 3.5rem;
   margin: 0vh 0vh 5vh 0vh;
 }
-.hero-header-text p{
+
+.hero-header-text p {
   font-size: 1.9rem;
   margin: 0px;
 }
 
-.booknowbtn{
+.booknowbtn {
   margin-top: 5vh;
   display: flex;
   justify-content: center;
   width: 100vw;
 }
-#book-now{
+
+#book-now {
   border-style: none;
   background-color: #4b6e97;
   padding: 9px 11px;
@@ -88,7 +108,9 @@ h1{
   font-size: 1rem;
 }
 
-.locations-page{
+/*locations page*/
+
+.locations-page {
   height: 115vh;
   display: flex;
   align-content: center;
@@ -96,34 +118,38 @@ h1{
   background-image: url("img/new-york-page.png"), linear-gradient(#707070, rgb(218, 218, 218));
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100vw auto;
+  background-size: cover;
 }
-.locations-header{
+
+.locations-header {
   display: flex;
   flex-direction: column;
   align-content: center;
   margin-left: 5vw;
   color: white;
 }
-.locations-header h2{
+
+.locations-header h2 {
   width: 24.5vw;
   border-bottom: white solid 5px;
   font-size: 3rem;
   margin-bottom: 5vh;
 }
-.locations-header p{
+
+.locations-header p {
   display: flex;
   justify-content: flex-start;
   margin: 0px;
   font-size: 1.8rem;
 }
 
-.benefits-page{
+.benefits-page {
   display: flex;
   flex-flow: column wrap;
   height: 115vh;
 }
-.benefits-header{
+
+.benefits-header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,27 +158,35 @@ h1{
   background-color: #131C27;
   color: white;
 }
-.benefits-header h2{
+
+.benefits-header h2 {
   width: 100vw;
   font-size: 3rem;
   margin: 0vh 0vw -8vh 0vw;
 }
-.benefits-header-p{
+
+.benefits-header-p {
   display: flex;
   align-items: center;
   flex-flow: column wrap;
-  font-size: 1.6rem;
+  font-size: 2rem;
+  width: 100vw;
 }
-.benefits-header p{
+
+.benefits-header p {
+  text-align: center;
   margin: 0vh;
+  width: 55vw;
 }
-.benefits-boxes{
+
+.benefits-boxes {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding-top: 12vh;
 }
-.benefits-box{
+
+.benefits-box {
   justify-content: space-between;
   display: flex;
   flex-flow: column wrap;
@@ -161,31 +195,41 @@ h1{
   box-shadow: #575757 1px 1px 5px;
   background-color: white;
 }
-.benefits-box-header{
+
+.benefits-box-header {
   display: flex;
   justify-content: center;
-  width: 20vw;
-  height: 10vh; 
+  height: 10vh;
   background-color: #131C27;
 }
-.benefits-box-icon{
+
+.benefits-box-header p{
+  width: 50vw;
+  text-align: center;
+}
+
+.benefits-box-icon {
   width: 3.5vw;
 }
-.benefits-box-text{
+
+.benefits-box-text {
   height: 50vh;
   display: flex;
   flex-flow: column;
   justify-content: center;
   flex-direction: column;
 }
-.benefits-box-text h3{
+
+.benefits-box-text h3 {
   margin: -5vh 0vw 0vh 0vw;
 }
-.benefits-box-text p{
+
+.benefits-box-text p {
   margin: 5vh 2vw 0vh 2vw;
+  text-align: center;
 }
 
-.contact-page{
+.contact-page {
   height: 115vh;
   display: flex;
   justify-content: center;
@@ -194,9 +238,10 @@ h1{
   background-image: url("img/contact-mountain.png"), linear-gradient(#707070, rgb(218, 218, 218));
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100vw auto;
+  background-size: cover;
 }
-.contact-box{
+
+.contact-box {
   display: flex;
   flex-flow: column wrap;
   width: 60vw;
@@ -204,18 +249,26 @@ h1{
   background-color: rgb(19, 28, 39, 0.7);
   border-radius: 25px;
 }
-#contact-header h2{
+
+#contact-header h2 {
   color: white;
   font-size: 2.5rem;
   padding: 0vh 0vw 10vh 0vw;
 }
-#contact-form{
+
+#contact-form {
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
   color: white;
 }
-.contact-form-inputb{
+
+.contact-form-inputa {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form-inputb {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -226,28 +279,25 @@ h1{
   font-size: 0.8rem;
   font-family: 'Poppins', sans-serif;
 }
-.contact-form-inputa{
-  display: flex;
-  justify-content: center;
-}
-.contact-form-inputb:focus{
+
+.contact-form-inputb:focus {
   outline: none;
 }
-.contact-form-label{
+
+.contact-form-label {
   display: flex;
   align-items: center;
 }
-#contact-btn-box{
+
+#contact-btn-box {
   display: flex;
-  align-items: flex-end;
-  height: 25.6vh;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  position: absolute;
+  bottom: 22.5vh;
 }
-#contact-btn{
-  display: flex;
-  justify-content: center;
-  align-self: flex-end;
-}
-#submit{
+
+#submit {
   border-style: none;
   background-color: #4b6e97;
   padding: 9px 11px;
@@ -257,10 +307,13 @@ h1{
   color: white;
   font-size: 1em;
   border-radius: 0px 0px 25px 25px;
-  opacity: 1;
 }
 
-footer{
+button:hover {
+  cursor: pointer;
+}
+
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -270,13 +323,184 @@ footer{
   background-color: #131C27;
   color: white;
 }
-.footer-text{
+
+.footer-text {
   display: flex;
   width: 32vw;
   font-weight: 700;
 }
-.footer-item{
+
+.footer-item {
   display: flex;
   justify-content: flex-end;
   width: 20vw;
+}
+
+@media screen and (max-width:576px){
+  .nav{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  min-height: 12vh;
+  width: 100vw;
+  background-color: #131C27;
+  }
+
+  #branding {
+    display: flex;
+    justify-content: center;
+    width: 20vw;
+  }
+  
+  #navitems{
+    width: 100vw;
+  }
+
+  #hero {
+    height: 150vh;
+  }
+  
+  .hero-header-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero-header-text p {
+    font-size: 1.4rem;
+    text-align: center;
+    width: 80vw;
+  }
+  
+  #book-now {
+    padding: 9px 11px;
+    width: 140px;
+    height: 6vh;
+    font-size: 0.8rem;
+  }
+
+  .locations-page {
+    height: 150vh;
+  }
+  
+  .locations-header h2 {
+    width: 302px;
+    justify-content: flex-start;
+    font-size: 2.4em;
+    margin-bottom: 5vh;
+  }
+  
+  .locations-header p{
+    padding-right: 50px;
+    font-size: 1.2em;
+  }
+  
+  .benefits-page {
+    height: 150vh;
+  }
+  
+  .benefits-header{
+    height: 40vh;
+  }
+  
+  .benefits-header h2 {
+    font-size: 1.8em;
+  }
+  
+  .benefits-header-p {
+    font-size: 1.1em;
+  }
+  
+  .benefits-boxes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 12vh;
+  }
+  
+  .benefits-box {
+    justify-content: space-between;
+    display: flex;
+    flex-flow: column wrap;
+    height: 60vh;
+    width: 20vw;
+    box-shadow: #575757 1px 1px 5px;
+    background-color: white;
+  }
+  
+  .benefits-box-header {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    background-color: #131C27;
+  }
+  
+  .benefits-box-header p{
+    width: 50vw;
+    text-align: center;
+  }
+  
+  .benefits-box-icon {
+    width: 3.5vw;
+  }
+  
+  .benefits-box-text {
+    height: 50vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .benefits-box-text h3 {
+    margin: -5vh 0vw 0vh 0vw;
+  }
+  
+  .benefits-box-text p {
+    margin: 5vh 2vw 0vh 2vw;
+    text-align: center;
+  }
+  
+  .contact-page {
+    height: 150vh;
+  }
+  
+  .contact-box {
+    width: 90vw;
+    height: 70vh;
+  }
+  
+  .contact-form-inputa {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contact-form-inputb {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-style: gray 1px;
+    margin: 10px 40px;
+    padding: 10px;
+    width: 40vw;
+    font-size: 0.8rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  #contact-btn-box {
+    bottom: -22vh;
+  }
+  
+  #submit {
+    border-style: none;
+    background-color: #4b6e97;
+    padding: 9px 11px;
+    width: 90vw;
+    height: 7vh;
+  }
+  
 }

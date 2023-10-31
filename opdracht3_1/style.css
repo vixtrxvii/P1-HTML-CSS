@@ -7,33 +7,32 @@ html{
   font-size: 62.5%;
 }
 body {
-  font-family: "Goldman", cursive;
-  min-height: 100vh;
   position: relative;
+  height: 100vh;
   width: 100vw;
+  font-family: "Goldman", cursive;
 }
 
 .navbar {
   display: flex;
-  width: 100vw;
-  padding: 2rem;
-  min-height: 10vh;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin: auto;
-  background: #00a8c7;
-  justify-content: space-between;
   position: sticky;
+  height: 10vh;
+  width: 100vw;
+  background: #00a8c7;
   top: 0;
 }
 .navbar a {
   color: white;
   text-decoration: none;
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding: 0 4rem 0 4rem;
 }
 .navbar img {
-  width: 5vw;
+  height: 7vh;
+  padding-left: 2vw;
 }
 .dropdown{
   justify-content: flex-end;
@@ -72,23 +71,32 @@ body {
   display: block;
 }
 
-#landingpagemain{
+.hero{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
   background-image: url("img/background.jpeg");
   background-repeat: no-repeat;
-  background-size: 100vw;
-  height: 100vh;
   position: center fixed;
+  background-size: 100vw;
 }
+#herotitle{
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  font-size: 5rem;
+  color: white;
+}
+
+
 .blackpagemain{
   background-color: black;
 }
 
-#landingpagetitle{
-  font-size: 5rem;
-  text-align: center;
-  color: white;
-  padding: 40vh 25vw 40vh 25vw;
-}
+
 h1{
   font-size: 5rem;
   text-align: center;
