@@ -176,7 +176,7 @@ h1 {
 .benefits-header p {
   text-align: center;
   margin: 0vh;
-  width: 55vw;
+  width: 80vw;
 }
 
 .benefits-boxes {
@@ -291,10 +291,11 @@ h1 {
 
 #contact-btn-box {
   display: flex;
+  position: relative;
+  bottom: 14vh;
   flex-wrap: wrap;
   align-content: flex-end;
-  position: absolute;
-  bottom: 22.5vh;
+  opacity: 1;
 }
 
 #submit {
@@ -316,7 +317,7 @@ button:hover {
 footer {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   flex-flow: row wrap;
   width: 100vw;
   min-height: 4vh;
@@ -326,8 +327,16 @@ footer {
 
 .footer-text {
   display: flex;
-  width: 32vw;
+  width: 25vw;
   font-weight: 700;
+}
+
+#footer-items{
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  align-content: center;
 }
 
 .footer-item {
@@ -338,12 +347,9 @@ footer {
 
 @media screen and (max-width:576px){
   .nav{
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  min-height: 12vh;
-  width: 100vw;
-  background-color: #131C27;
+    flex-flow: column wrap;
+    justify-content: center;
+    min-height: 12vh;
   }
 
   #branding {
@@ -377,7 +383,6 @@ footer {
   }
   
   #book-now {
-    padding: 9px 11px;
     width: 140px;
     height: 6vh;
     font-size: 0.8rem;
@@ -389,9 +394,7 @@ footer {
   
   .locations-header h2 {
     width: 302px;
-    justify-content: flex-start;
     font-size: 2.4em;
-    margin-bottom: 5vh;
   }
   
   .locations-header p{
@@ -400,60 +403,48 @@ footer {
   }
   
   .benefits-page {
-    height: 150vh;
+    height: 170vh;
+    flex-flow: column wrap;
   }
   
   .benefits-header{
-    height: 40vh;
+    height: 35vh;
   }
   
   .benefits-header h2 {
     font-size: 1.8em;
+    width: 80vw;
+    text-align: center;
   }
   
   .benefits-header-p {
     font-size: 1.1em;
+    width: 90vw;
   }
   
   .benefits-boxes {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 12vh;
+    flex-flow: column wrap;
+    align-content: space-evenly;
   }
   
   .benefits-box {
-    justify-content: space-between;
     display: flex;
-    flex-flow: column wrap;
-    height: 60vh;
-    width: 20vw;
-    box-shadow: #575757 1px 1px 5px;
-    background-color: white;
+    height: 40vh;
+    width: 75vw;
+    margin: 5vh 0vw 5vh;
   }
   
   .benefits-box-header {
-    display: flex;
-    justify-content: center;
-    height: 10vh;
-    background-color: #131C27;
+    height: 9vh;
+    width: 75vw;
   }
-  
-  .benefits-box-header p{
-    width: 50vw;
-    text-align: center;
-  }
-  
+
   .benefits-box-icon {
-    width: 3.5vw;
+    width: 8vw;
   }
   
   .benefits-box-text {
-    height: 50vh;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    flex-direction: column;
+    height: 25vh;
   }
   
   .benefits-box-text h3 {
@@ -480,27 +471,30 @@ footer {
   }
   
   .contact-form-inputb {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    border-style: gray 1px;
-    margin: 10px 40px;
-    padding: 10px;
     width: 40vw;
     font-size: 0.8rem;
-    font-family: 'Poppins', sans-serif;
   }
   
   #contact-btn-box {
-    bottom: -22vh;
+    position: relative;
+    top: 14vh;
   }
-  
+    
   #submit {
-    border-style: none;
-    background-color: #4b6e97;
-    padding: 9px 11px;
     width: 90vw;
     height: 7vh;
   }
   
+  .footer-text {
+    justify-content: center;
+  }
+  
+  #footer-items{
+    width: 100vw;
+  }
+
+  .footer-item{
+    width: 33vw;
+    justify-content: center;
+  }
 }
