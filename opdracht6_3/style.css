@@ -1,22 +1,36 @@
-.navbar{
-  display: flex;
-  color: blue;
+nav{
   width: 100vw;
+  display: flex;
   justify-content: center;
+  color: blue;
+  font-size: large;
 }
-.navbar div{
+
+nav ul{
   display: flex;
   justify-content: space-around;
+  list-style-type: none;
 }
+
+nav a{
+  text-decoration: none;
+}
+
 .nav-item{
+  display: flex;
   align-self: center;
   width: 12.5vw;
 }
-.login{
+
+#logo{
   width: 25vw;
-  justify-content: flex-end;
 }
-.logo{
-  width: 25vw;
-  justify-content: flex-start;
+
+#login{
+  display: flex;
+  width: 20vw;
+}
+
+#logo, #login{
+  justify-content: center;
 }
