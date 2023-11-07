@@ -1,75 +1,70 @@
 html {
   display: flex;
   font-family: 'Poppins', sans-serif;
-  width: 100vw;
-  height: 460vh;
 }
 
 body {
-  margin: 0;
   position: relative;
+  margin: 0;
 }
 
-h1,
-h2,
-h3,
-p {
+h1, h2, h3, p {
   display: flex;
   justify-content: center;
 }
 
 /*navigation*/
 
-.nav {
+nav {
+  width: 100vw;
+  min-height: 7vh;
+  background-color: #131C27;
   position: fixed;
   display: flex;
-  flex-flow: row wrap;
   justify-content: center;
+  flex-flow: row wrap;
   align-items: center;
-  min-height: 7vh;
-  width: 100vw;
-  background-color: #131C27;
+}
+
+nav ul{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 
 #branding {
-  width: 48vw;
-  color: white;
+  width: 45vw;
+  display: flex;
   font-family: 'Pattaya', sans-serif;
   font-size: larger;
-}
-
-#navitems{
-  display: flex;
-  width: 40vw;
-  justify-content: space-around;
+  color: white;
 }
 
 .navitem {
-  display: flex;
   width: 15vw;
+  display: flex;
   justify-content: space-around;
 }
 
-.nav a {
+nav li, nav a {
+  list-style-type: none;
   text-decoration: none;
   color: white;
 }
 
-/*landing page*/
-
 #hero {
+  height: 100vh;
   display: flex;
   background-image: url("img/landing-page.jpg");
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 115vh;
 }
 
 .hero-header {
   width: 100vw;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   color: white;
 }
@@ -81,43 +76,43 @@ p {
 }
 
 h1 {
+  margin-bottom: 2.5rem;
   font-size: 3.5rem;
-  margin: 0vh 0vh 5vh 0vh;
 }
 
 .hero-header-text p {
+  width: 55vw;
+  text-align: center;
   font-size: 1.9rem;
-  margin: 0px;
 }
 
-.booknowbtn {
-  margin-top: 5vh;
+.book-now-btn {
+  width: 100vw;
   display: flex;
   justify-content: center;
-  width: 100vw;
+  flex-flow: row wrap;
+  align-content: center;
 }
 
 #book-now {
-  border-style: none;
-  background-color: #4b6e97;
-  padding: 9px 11px;
   width: 11vw;
   height: 6vh;
+  background-color: #4b6e97;
+  border-style: none;
+  align-content: center;
   font-family: 'Poppins', sans-serif;
-  color: white;
   font-size: 1rem;
+  color: white;
 }
 
-/*locations page*/
-
 .locations-page {
-  height: 115vh;
+  height: 100vh;
   display: flex;
   align-content: center;
   flex-wrap: wrap;
   background-image: url("img/new-york-page.png"), linear-gradient(#707070, rgb(218, 218, 218));
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -125,12 +120,14 @@ h1 {
   display: flex;
   flex-direction: column;
   align-content: center;
-  margin-left: 5vw;
+  margin-left: 5rem;
   color: white;
 }
 
 .locations-header h2 {
-  width: 24.5vw;
+  display: flex;
+  justify-content: flex-start;
+  width: 24rem;
   border-bottom: white solid 5px;
   font-size: 3rem;
   margin-bottom: 5vh;
@@ -230,7 +227,7 @@ h1 {
 }
 
 .contact-page {
-  height: 115vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -320,14 +317,14 @@ footer {
   align-content: center;
   flex-flow: row wrap;
   width: 100vw;
-  min-height: 4vh;
+  max-height: 8vh;
   background-color: #131C27;
   color: white;
 }
 
 .footer-text {
   display: flex;
-  width: 25vw;
+  width: 20vw;
   font-weight: 700;
 }
 
@@ -345,7 +342,13 @@ footer {
   width: 20vw;
 }
 
-@media screen and (max-width:576px){
+#instagram, #twitter, #youtube{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+@media screen and (max-width:767px){
   .nav{
     flex-flow: column wrap;
     justify-content: center;
